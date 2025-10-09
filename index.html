@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Site Sosa</title>
+  <title>Site Silva</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -136,14 +136,40 @@
 <div class="laptop">
   <div class="screen">
     <div class="header1"></div>
-      <div class="glitchbox">
-        <img src="assets/img/icons/team.webp" alt="team-sosa">
-      </div>
 
-    <!--<div class="text">
-      🏆 BENCH DEL MES – ¿? <br />
-      <span class="subtext">Pronto descubriremos si hay un nuevo bench</span>
-    </div>-->
+    <!--NO TOCAR
+      <div class="glitchbox">
+        <img src="assets/img/icons/team.webp" alt="team-silva">
+      </div>-->
+    
+<div class="bench-del-mes">
+  <h3>🏆 BENCH DEL MES</h3>
+  <p id="bench-message"><em>Pronto descubriremos si hay un nuevo bench...</em></p>
+</div>
+
+<script>
+  const messages = [
+    "Pronto descubriremos si hay un nuevo bench...",
+    "¿Quién será el próximo destacado?",
+    "¡Atentos al próximo!",
+    "¿Quién habrá agarrado la pala?",
+    "MMM dijo la muda...",
+    "¿Quién romperá los KPIs?",
+    "La pala no quema...",
+    "¿Y si el bench sos vos?",
+    "¿A qué hora me voy?",
+    "Ah sh*t, here we go again!"
+  ];
+
+  let index = 0;
+  const messageElement = document.getElementById("bench-message");
+
+  setInterval(() => {
+    index = (index + 1) % messages.length;
+    messageElement.innerHTML = `<em>${messages[index]}</em>`;
+  }, 4000); // cambia cada 4 segundos
+</script>
+
 
 
   </div>
@@ -2322,7 +2348,7 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
   .responsive-iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 90%;
+    padding-bottom: 100%; /* Aumentá este valor */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -2400,7 +2426,7 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
           </div>
 
           <div class="faq-item" data-bs-toggle="modal" data-bs-target="#faqModal13" style="cursor: pointer;">
-            <h3>Extensores Wi-Fi</h3>
+            <h3>Extensores Wi-Fi | <i class="bi bi-play-circle"></i></h3>
             <i class="bi bi-plus faq-toggle"></i>
           </div>
 
@@ -2417,7 +2443,7 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
           </div>
 
           <div class="faq-item" data-bs-toggle="modal" data-bs-target="#faqModal8" style="cursor: pointer;">
-            <h3>Configuración de canales HD</h3>
+            <h3>Configuración de canales HD | <i class="bi bi-play-circle"></i></h3>
             <i class="bi bi-plus faq-toggle"></i>
           </div>
 
@@ -2926,293 +2952,414 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
       </script>
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - agustin.webp" class="img-fluid" alt="" loading="lazy">
-            <div class="member-social">
-              <a href="https://wa.me/+5493512345272?text=Hola, Agus!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-            </div>
-            </div>
-            <div class="member-content">
-              <h3>Agustin Acevedo</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+        <!-- ALVARO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - alvaro.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512345272?text=Hola, Doffo!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Alvaro Doffo</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - ailen.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493513492730?text=Hola, Ailen!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Ailen Vosahlo</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- NICOLÁS -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - nicolas.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512111004?text=Hola, Nico!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Nicolás Ezequiel Andrada</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - daniela.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493516744663?text=Hola, Dani!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Daniela Marioni</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- LUIS -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - luis.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512936515?text=Hola, Luis!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Luis Alejandro Bastidas</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - diego.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493512842889?text=Hola, Ricci!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Diego Ricci</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- LUCAS -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - lucas.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516468880?text=Hola, Lucas!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Lucas Demián Ávila</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - emanuel.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493517532952?text=Hola, Ema!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Emanuel Moya</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- LAUTARO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - Lautaro.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516514821?text=Hola, Lautaro!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Lautaro Nicolás Sosa</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - ezequiel.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493512024634?text=Hola, Eze!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Ezequiel de la Vega</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- BRENDA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - brenda.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493513492730?text=Hola, Brenda!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Brenda Vázquez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - fabrizio.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493516359960?text=Hola, Fabri!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Fabrizio Zambanini</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- DANA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - dana.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516744663?text=Hola, Dana!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Dana Gisel Escobedo</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - gabriel h.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493513898591?text=Hola, Gabi!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Gabriel Hazrun</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- ENZO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - enzo.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512842889?text=Hola, Enzo!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Enzo Federico Escudero</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - gabriel.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493513761305?text=Hola, Gabi!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Gabriel Nesteruk</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - juan.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493516776123?text=Hola, Juanma!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Juan Manuel Godoy</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- EZEQUIEL -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - ezequiel.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493517532952?text=Hola, Eze!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Ezequiel Montenegro</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - kevin.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5492944211288?text=Hola, Kevin!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Kevin Arce</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- FACUNDO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - facundo.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512024634?text=Hola, Facu!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Facundo Nahuel Valdez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - luis.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493624171015?text=Hola, Luis!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Luis Alvarez</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- FRANCISCO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - francisco.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516359960?text=Hola, Fran!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Francisco Ariel Teleña</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - marcelo.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5492804280210?text=Hola, Marce!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Marcelo Lencina</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- GIULIANA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - giuliana.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512105634?text=Hola, Giuli!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Giuliana Cornejo Gómez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - matias c.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493516468880?text=Hola, Mati!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Matias Cascardo</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- GUILLERMO -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - guillermo.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5491161504566?text=Hola, Guille!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Guillermo Daniel Martínez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - matias.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493516514821?text=Hola, Mati!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Matias Farias</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- IVANA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - ivana.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493513761305?text=Hola, Ivi!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Ivana Evangelina Moyano</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - micaela.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493512936515?text=Hola, Mica!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Micaela Gallegos</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- JENIFER -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - jenifer.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516776123?text=Hola, Mica!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Jenifer Micaela Gutierrez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-                    <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - octavio.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493512111004?text=Hola, Octa!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Octavio Nuñez</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- JONATAN -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - jonatan.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5492944211288?text=Hola, Jonatan!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Jonatan Nicolás Vázquez</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
-        <div class="swiper-slide">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="assets/img/person/team - rodrigo.webp" class="img-fluid" alt="" loading="lazy">
-              <div class="member-social">
-              <a href="https://wa.me/+5493512105634?text=Hola, Rodri!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
-              </div>
-            </div>
-            <div class="member-content">
-              <h3>Rodrigo Caceres</h3>
-              <span>Representante de Personal RRSS</span>
-              <p></p>
-            </div>
-          </div>
-        </div><!-- End slide item -->
+<!-- JUAN -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - juan.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493624171015?text=Hola, JJ!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Juan José Barboza Oliva</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- KAREN -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - karen.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5492804280210?text=Hola, Karen!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Karen Magalí Sanz</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- MICAELA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - mica.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512111004?text=Hola, Mica!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Micaela Soledad Cariddi</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- MARTÍN -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - martin.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5492804280210?text=Hola, Martin!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Martín Stegemann</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- MELANI -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - melani.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516468880?text=Hola, Melani!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Melani Belén Moreno</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- MIGUEL -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - miguel.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493516514821?text=Hola, Miguel!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Miguel Rojas Medina</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- MILAGROS -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - milagros.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512936515?text=Hola, Mili!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Milagros Spaggiari</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- SILVIA -->
+<div class="swiper-slide">
+  <div class="team-member">
+    <div class="member-image">
+      <img src="assets/img/person/team - silvia.webp" class="img-fluid" alt="" loading="lazy">
+      <div class="member-social">
+        <a href="https://wa.me/+5493512105634?text=Hola, Silvia!" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+      </div>
+    </div>
+    <div class="member-content">
+      <h3>Silvia Liliana Bulacio</h3>
+      <span>Representante de Personal RRSS</span>
+      <p></p>
+    </div>
+  </div>
+</div>
 
       </div>
     </div>
@@ -3664,9 +3811,9 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
   </svg>
 </a>
           <div class="footer-contact pt-3">
-            <p>SITE SOSA</p>
-            <p class="mt-3"><strong>Celular:</strong> <span>+54 351 207 1293</span></p>
-            <p><strong>Email:</strong> <span>sebastian.sosa@konecta.com</span></p>
+            <p>SITE SILVA</p>
+            <p class="mt-3"><strong>Celular:</strong> <span>+54 351 372 9980</span></p>
+            <p><strong>Email:</strong> <span>gonzalo.silva@konecta.com</span></p>
           </div>
         </div>
 
@@ -3721,7 +3868,7 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
 
     <div class="d-flex flex-column align-items-center align-items-lg-start">
       <div>
-        © Copyright <strong><span>Site Sosa</span></strong>. All Rights Reserved
+        © Copyright <strong><span>Site Silva</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="#">Guillermo Martinez</a>

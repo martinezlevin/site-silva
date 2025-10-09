@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Site Sosa | Cumpleaños</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+</head>
+
+<body class="starter-page-page">
+
+<canvas id="canvas"></canvas>
+
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="40.000000pt" height="40.000000pt" viewBox="0 0 320.000000 320.000000"
+          preserveAspectRatio="xMidYMid meet">
+          <metadata>
+          Created by potrace 1.10, written by Peter Selinger 2001-2011
+          </metadata>
+          <g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)"
+          fill="#ffffff" stroke="none">
+          <path d="M774 3095 c-330 -60 -526 -273 -527 -575 0 -89 19 -173 55 -245 36
+          -70 128 -150 231 -199 105 -52 159 -69 382 -126 266 -67 325 -100 325 -182 0
+          -49 -19 -76 -73 -105 -53 -30 -256 -23 -370 11 -104 31 -209 82 -294 142 l-61
+          44 -99 -118 c-54 -64 -118 -140 -141 -169 l-43 -52 63 -50 c80 -65 277 -163
+          390 -195 117 -33 275 -56 391 -56 l96 0 133 117 c73 65 221 197 329 293 107
+          96 354 317 549 490 438 390 843 751 850 758 27 27 -290 -213 -840 -638 -408
+          -315 -376 -293 -385 -264 -26 86 -112 193 -200 249 -90 57 -219 104 -439 160
+          -118 30 -233 63 -255 74 -54 28 -81 65 -81 113 0 72 72 118 185 118 132 -1
+          303 -54 434 -135 41 -25 75 -44 76 -43 43 51 245 353 242 361 -8 19 -170 116
+          -239 145 -203 82 -485 114 -684 77z"/>
+          <path d="M1880 1758 c-244 -217 -539 -480 -930 -829 -520 -462 -730 -651 -730
+          -655 0 -3 285 209 633 471 347 261 635 475 640 475 4 0 7 -6 7 -14 0 -7 16
+          -45 35 -84 79 -158 241 -250 585 -334 304 -73 374 -115 356 -212 -9 -46 -52
+          -81 -116 -95 -169 -36 -421 29 -612 160 -32 21 -62 39 -67 39 -6 0 -71 -73
+          -146 -161 -133 -158 -135 -162 -118 -181 56 -63 255 -175 383 -216 170 -56
+          235 -65 440 -66 172 0 205 3 280 23 136 36 224 85 311 171 112 111 159 227
+          159 395 0 243 -121 393 -402 499 -38 14 -134 41 -215 61 -287 70 -348 96 -371
+          157 -13 33 -12 41 4 75 26 51 71 75 153 81 128 9 288 -37 448 -129 75 -42 83
+          -45 96 -30 7 9 46 63 87 121 40 58 91 129 113 159 l40 55 -35 31 c-48 41 -199
+          120 -290 151 -116 40 -212 55 -378 61 l-155 5 -205 -184z"/>
+          </g>
+        </svg>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html#accesos">Accesos Directos</a></li>
+          <li><a href="index.html#recursos">Recursos</a></li>
+          <li><a href="index.html#emuladores">Emuladores</a></li>
+          <li><a href="index.html#speechs">Speechs</a></li>
+          <li><a href="index.html#tde">TDE</a></li>
+          <li class="dropdown"><a href="index.html#autogestion"><span>Autogestión</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal1">Modificación de agenda</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal2">Wifi Backup</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal3">Personal Wifi Zone</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal4">¿A qué red Wi-Fi estoy conectado? (Decodificador)</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal5">Desenlistar dispositivos</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal6">Cambio de contraseña (Wi-Fi)</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal7">Ubicación recomendada (Módem)</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal8">Configuración de canales HD</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal9">Optimizar redes Wi-Fi</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#faqModal10">Dispositivos conectados a Wi-Fi</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#team">Equipo</a></li>
+          <li><a href="index.html#leader">Lideres</a></li>
+          <li><a href="index.html#contact">Contactos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="cumples.html">Cumpleaños</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Cumpleaños</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="current">Cumpleaños</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+<div class="wrapper">
+  <div class="inner" style="--quantity: 20;">
+
+<div class="card" style="--index: 0; --color-card: 255, 69, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - kevin.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Kevin Arce</h3>
+    <p class="birthday">05/01</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 1; --color-card: 255, 140, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - luis.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Luis Alvarez</h3>
+    <p class="birthday">21/01</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 2; --color-card: 255, 215, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - fabrizio.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Fabrizio Zambanini</h3>
+    <p class="birthday">03/03</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 3; --color-card: 124, 252, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - marcelo.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Marcelo Lencina</h3>
+    <p class="birthday">06/03</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 4; --color-card: 0, 255, 127;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - agustin.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Agustin Acevedo</h3>
+    <p class="birthday">19/03</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 6; --color-card: 30, 144, 255;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - ailen.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Ailen Vosahlo</h3>
+    <p class="birthday">28/04</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 7; --color-card: 138, 43, 226;">
+  <div class="profile-photo">
+    <img src="assets/img/person/leader - sebastian.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Sebastian Sosa</h3>
+    <p class="birthday">30/04</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 8; --color-card: 255, 20, 147;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - daniela.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Daniela Marioni</h3>
+    <p class="birthday">12/06</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 9; --color-card: 0, 191, 255;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - matias.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Matias Farias</h3>
+    <p class="birthday">28/07</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 10; --color-card: 255, 105, 180;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - matias c.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Matias Cascardo</h3>
+    <p class="birthday">06/08</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 11; --color-card: 255, 0, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - ezequiel.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Eze De La Vega</h3>
+    <p class="birthday">08/08</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 12; --color-card: 0, 255, 255;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - rodrigo.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Rodrigo Caceres</h3>
+    <p class="birthday">09/08</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 13; --color-card: 255, 165, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - octavio.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Octavio Nuñez</h3>
+    <p class="birthday">14/09</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 14; --color-card: 75, 0, 130;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - micaela.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Micaela Gallegos</h3>
+    <p class="birthday">24/09</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 15; --color-card: 199, 21, 133;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - emanuel.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Emanuel Moya</h3>
+    <p class="birthday">29/09</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 16; --color-card: 0, 128, 128;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - diego.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Diego Ricci</h3>
+    <p class="birthday">24/10</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 17; --color-card: 124, 252, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - gabriel h.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Gabriel Hazrun</h3>
+    <p class="birthday">10/11</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 18; --color-card: 255, 69, 0;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - gabriel.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Gabriel Nesteruk</h3>
+    <p class="birthday">20/11</p>
+  </div>
+</div>
+
+<div class="card" style="--index: 19; --color-card: 255, 20, 147;">
+  <div class="profile-photo">
+    <img src="assets/img/person/team - juan.webp" alt="Foto persona" class="profile-img img-fluid" />
+  </div>
+  <div class="info">
+    <h3 class="name">Juanma Godoy</h3>
+    <p class="birthday">31/12</p>
+  </div>
+</div>
+</div>
+<div class="carousel-controls">
+<button id="prev-btn">⟨</button>
+<button id="next-btn">⟩</button>
+</div>
+</div>
+
+
+
+<!-- Audio -->
+<audio id="audio">
+  <source src="assets/audio/track.mp3" type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Toggle switch fijo -->
+<div class="container d-flex justify-content-center mt-5">
+<div class="toggle-cont" id="audio-toggle" style="display: none;">
+  <input class="toggle-input" id="toggle" name="toggle" type="checkbox" />
+  <label class="toggle-label" for="toggle">
+    <div class="cont-label-play">
+      <span class="label-play"></span>
+    </div>
+  </label>
+</div>
+</div>
+
+      
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+
+<footer id="footer" class="footer light-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="40.000000pt" height="40.000000pt" viewBox="0 0 320.000000 320.000000"
+    preserveAspectRatio="xMidYMid meet">
+    <g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)"
+    fill="#ffffff" stroke="none">
+    <path d="M774 3095 c-330 -60 -526 -273 -527 -575 0 -89 19 -173 55 -245 36
+    -70 128 -150 231 -199 105 -52 159 -69 382 -126 266 -67 325 -100 325 -182 0
+    -49 -19 -76 -73 -105 -53 -30 -256 -23 -370 11 -104 31 -209 82 -294 142 l-61
+    44 -99 -118 c-54 -64 -118 -140 -141 -169 l-43 -52 63 -50 c80 -65 277 -163
+    390 -195 117 -33 275 -56 391 -56 l96 0 133 117 c73 65 221 197 329 293 107
+    96 354 317 549 490 438 390 843 751 850 758 27 27 -290 -213 -840 -638 -408
+    -315 -376 -293 -385 -264 -26 86 -112 193 -200 249 -90 57 -219 104 -439 160
+    -118 30 -233 63 -255 74 -54 28 -81 65 -81 113 0 72 72 118 185 118 132 -1
+    303 -54 434 -135 41 -25 75 -44 76 -43 43 51 245 353 242 361 -8 19 -170 116
+    -239 145 -203 82 -485 114 -684 77z"/>
+    <path d="M1880 1758 c-244 -217 -539 -480 -930 -829 -520 -462 -730 -651 -730
+    -655 0 -3 285 209 633 471 347 261 635 475 640 475 4 0 7 -6 7 -14 0 -7 16
+    -45 35 -84 79 -158 241 -250 585 -334 304 -73 374 -115 356 -212 -9 -46 -52
+    -81 -116 -95 -169 -36 -421 29 -612 160 -32 21 -62 39 -67 39 -6 0 -71 -73
+    -146 -161 -133 -158 -135 -162 -118 -181 56 -63 255 -175 383 -216 170 -56
+    235 -65 440 -66 172 0 205 3 280 23 136 36 224 85 311 171 112 111 159 227
+    159 395 0 243 -121 393 -402 499 -38 14 -134 41 -215 61 -287 70 -348 96 -371
+    157 -13 33 -12 41 4 75 26 51 71 75 153 81 128 9 288 -37 448 -129 75 -42 83
+    -45 96 -30 7 9 46 63 87 121 40 58 91 129 113 159 l40 55 -35 31 c-48 41 -199
+    120 -290 151 -116 40 -212 55 -378 61 l-155 5 -205 -184z"/>
+    </g>
+  </svg>
+</a>
+          <div class="footer-contact pt-3">
+            <p>SITE SOSA</p>
+            <p class="mt-3"><strong>Celular:</strong> <span>+54 351 207 1293</span></p>
+            <p><strong>Email:</strong> <span>sebastian.sosa@konecta.com</span></p>
+          </div>
+        </div>
+
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Secciones</h4>
+  <ul>
+    <li><a href="index.html#hero">Inicio</a></li>
+    <li><a href="index.html#about">Nosotros</a></li>
+    <li><a href="index.html#team">Equipo</a></li>
+    <li><a href="index.html#leader">Líderes</a></li>
+    <li><a href="index.html#contact">Contactos</a></li>
+  </ul>
+</div>
+
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Recursos</h4>
+  <ul>
+    <li><a href="index.html#recursos">Generales</a></li>
+    <li><a href="index.html#emuladores">Emuladores</a></li>
+    <li><a href="index.html#speechs">Speechs</a></li>
+    <li><a href="index.html#tde">TDE</a></li>
+  </ul>
+</div>
+
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Links Útiles</h4>
+  <ul>
+    <li><a href="index.html#accesos">Accesos Directos</a></li>
+    <li><a href="index.html#manuales">Manuales</a></li>
+    <li><a href="index.html#autogestion">Autogestión</a></li>
+    <li><a href="index.html#mate">MATE</a></li>
+  </ul>
+</div>
+
+<div class="col-lg-2 col-md-3 footer-links">
+  <h4>Autogestión</h4>
+  <ul>
+    <li><a href="index.html#autogestion">Modificación de agenda</a></li>
+    <li><a href="index.html#autogestion">Wifi Backup</a></li>
+    <li><a href="index.html#autogestion">Personal Wifi Zone</a></li>
+    <li><a href="index.html#autogestion">¿A qué red estoy conectado?</a></li>
+    <li><a href="index.html#autogestion">Desenlistar dispositivos</a></li>
+  </ul>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="copyright text-center">
+  <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+    <div class="d-flex flex-column align-items-center align-items-lg-start">
+      <div>
+        © Copyright <strong><span>Site Sosa</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Guillermo Martinez</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/confeti.js"></script>
+
+  
+<!-- Botón oculto para simular cumpleaños -->
+<button id="simular-cumple" style="
+  position: fixed;
+  bottom: 1px;
+  left: 1px;
+  z-index: 10000;
+  background: transparent;
+  border: none;
+  font-size: 5px;
+  opacity: 0.1;
+  cursor: pointer;
+">
+  🎂
+</button>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  // Configuración inicial
+  const today = new Date();
+  const hoy = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}`;
+  
+  // Elementos
+  const inner = document.querySelector(".inner");
+  const cards = document.querySelectorAll(".card");
+  const cantidad = cards.length;
+  const audio = document.getElementById("audio");
+  const toggleCont = document.getElementById("audio-toggle");
+  const toggleInput = document.getElementById("toggle");
+  const simularBtn = document.getElementById("simular-cumple");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  
+  // Variables de estado
+  let currentIndex = 0;
+  let isDragging = false;
+  let startX = 0;
+  let autoRotateTimer;
+  let isBirthdayActive = false;
+  let audioAttempted = false;
+  let birthdayDate = null;
+  let birthdayIndex = null;
+
+
+setInterval(() => {
+  if (isBirthdayActive && birthdayDate) {
+    const now = new Date();
+    const mismoDia = now.getDate() === birthdayDate.getDate() &&
+                     now.getMonth() === birthdayDate.getMonth();
+    if (!mismoDia) {
+      isBirthdayActive = false;
+      birthdayDate = null;
+      document.querySelectorAll(".cumpleanero").forEach(card => card.classList.remove("cumpleanero"));
+      startAutoRotate();
+      setupDragControls();
+    }
+  }
+}, 60000); // revisa cada 60 segundos
+
+  // Sistema de rotación
+  function rotateTo(index) {
+    currentIndex = (index + cantidad) % cantidad;
+    const degrees = -currentIndex * (360 / cantidad);
+    inner.style.transform = `perspective(1000px) rotateX(-15deg) rotateY(${degrees}deg)`;
+  }
+
+  // Control de audio
+  function setupAudio() {
+    // Intentar reproducir solo si es cumpleaños y no se ha intentado antes
+    if (isBirthdayActive && !audioAttempted) {
+      audioAttempted = true;
+      
+      const playAudio = () => {
+        audio.play()
+          .then(() => {
+            toggleInput.checked = true;
+          })
+          .catch(error => {
+            console.log("Reproducción automática bloqueada:", error);
+            toggleInput.checked = false;
+          });
+      };
+
+      // Intentar reproducir inmediatamente
+      playAudio();
+      
+      // También intentar después de la primera interacción del usuario
+      document.body.addEventListener('click', function firstInteraction() {
+        playAudio();
+        document.body.removeEventListener('click', firstInteraction);
+      });
+    }
+
+    // Configurar control de toggle
+    toggleInput.onchange = () => {
+      if (toggleInput.checked) {
+        audio.play().catch(e => console.log("Error al reproducir:", e));
+      } else {
+        audio.pause();
+      }
+    };
+  }
+
+  // Control de cumpleaños
+
+  function activateBirthday(index) {
+    isBirthdayActive = true;
+    birthdayIndex = index;
+    birthdayDate = new Date(); // guardamos la fecha actual
+    rotateTo(index);
+    toggleCont.style.display = "block";
+    setupAudio();
+}
+
+  // Detectar cumpleaños real
+  cards.forEach((card, i) => {
+    const birthdayElement = card.querySelector(".birthday");
+    if (birthdayElement && birthdayElement.textContent.trim() === hoy) {
+      card.classList.add("cumpleanero");
+      activateBirthday(i);
+    }
+  });
+
+// Simulador de cumpleaños
+simularBtn?.addEventListener("click", () => {
+  if (!isBirthdayActive && cards.length > 0) {
+    const randomIndex = Math.floor(Math.random() * cards.length);
+    cards[randomIndex].classList.add("cumpleanero");
+    activateBirthday(randomIndex);
+    inner.classList.remove("auto-rotate"); // Detiene animación si está activa
+  }
+});
+
+
+  // Resto del código (botones de navegación, rotación automática, etc.)
+  // ... (mantén el mismo código para los controles de rotación)
+  
+  // Navegación con botones
+  prevBtn?.addEventListener("click", () => {
+    if (isBirthdayActive) return;
+    rotateTo(currentIndex - 1);
+    resetAutoRotate();
+  });
+
+  nextBtn?.addEventListener("click", () => {
+    if (isBirthdayActive) return;
+    rotateTo(currentIndex + 1);
+    resetAutoRotate();
+  });
+
+  // Sistema de rotación automática
+  function startAutoRotate() {
+    if (isBirthdayActive) return;
+    inner.classList.add("auto-rotate");
+  }
+
+  function resetAutoRotate() {
+    clearTimeout(autoRotateTimer);
+    inner.classList.remove("auto-rotate");
+    autoRotateTimer = setTimeout(startAutoRotate, 3000);
+  }
+
+  // Control manual (drag)
+  function setupDragControls() {
+    if (isBirthdayActive) return;
+    
+    // Touch events
+    inner.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+      resetAutoRotate();
+    });
+    
+    inner.addEventListener("touchmove", e => {
+      const delta = e.touches[0].clientX - startX;
+      rotateTo(currentIndex + delta * 0.01);
+      startX = e.touches[0].clientX;
+    });
+    
+    // Mouse events
+    inner.addEventListener("mousedown", e => {
+      isDragging = true;
+      startX = e.clientX;
+      resetAutoRotate();
+    });
+    
+    document.addEventListener("mousemove", e => {
+      if (!isDragging) return;
+      const delta = e.clientX - startX;
+      rotateTo(currentIndex + delta * 0.01);
+      startX = e.clientX;
+    });
+    
+    document.addEventListener("mouseup", () => isDragging = false);
+  }
+
+  // Inicialización
+  if (!isBirthdayActive) {
+    startAutoRotate();
+    setupDragControls();
+  }
+});
+</script>
+
+</body>
+
+</html>

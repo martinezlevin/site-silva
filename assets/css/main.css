@@ -10,7 +10,7 @@
   --background-color: #040000; /* Background color for the entire website, including individual sections */
   --default-color: #f8f8f8; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e59d02; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #00AFE4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #191919; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -18,11 +18,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #f8f8f8;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e59d02; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #00AFE4; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #1b1a1a; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #1b1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #f8f8f8; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e59d02; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #21DBAA; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -775,7 +775,7 @@ section,
 }
 
 .hero .hero-title .typed {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #8b5cf6 50%) 100%);
+  background: linear-gradient(135deg, #00AFE4 0%, #21DBAA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -789,7 +789,7 @@ section,
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #8b5cf6 50%) 100%);
+  background: linear-gradient(135deg, #00AFE4 0%, #21DBAA 100%);
   border-radius: 2px;
 }
 
@@ -4053,7 +4053,7 @@ section,
 }
 .accordion-button:not(.collapsed) {
   background-color: #1B1A1A;
-  color: #E59D02;
+  color: #00AFE4;
 }
 .accordion-body {
   background-color: #1B1A1A;
@@ -4153,8 +4153,8 @@ section,
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: greenyellow;
-  box-shadow: 0 0 0 2px greenyellow;
+  color: #00AFE4;
+  box-shadow: 0 0 0 2px #00AFE4;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -4164,7 +4164,7 @@ section,
 .animated-button svg {
   position: absolute;
   width: 24px;
-  fill: greenyellow;
+  fill: #00AFE4;
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -4184,7 +4184,7 @@ section,
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: greenyellow;
+  background-color: #00AFE4;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -4221,7 +4221,7 @@ section,
 
 .animated-button:active {
   scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
+  box-shadow: 0 0 0 4px #00AFE4;
 }
 
 .animated-button:hover .circle {
@@ -4411,7 +4411,7 @@ section,
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid #ff8f00;
+  border-bottom: 2px solid #00AFE4;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -4425,9 +4425,9 @@ section,
 
 .tab-buttons button {
   background: transparent;
-  border: 1px solid #ff6f00;
+  border: 1px solid #00AFE4;
   padding: 8px 12px;
-  color: #ffab40;
+  color: #00AFE4;
   font-weight: 600;
   cursor: pointer;
   font-size: 13px;
@@ -4437,9 +4437,9 @@ section,
 
 .tab-buttons button.active,
 .tab-buttons button:hover {
-  background: #ff6f00;
+  background: #00AFE4;
   color: #121212;
-  border-color: #ff9100;
+  border-color: #00AFE4;
 }
 
 .tab-content {
@@ -4460,11 +4460,11 @@ table {
 
 th, td {
   padding: 6px;
-  border-bottom: 1px solid #ff6f00;
+  border-bottom: 1px solid #00AFE4;
 }
 
 th {
-  background: #ff6f00;
+  background: #00AFE4;
   color: #121212;
 }
 

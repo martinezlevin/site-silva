@@ -116,10 +116,10 @@ function animateValue(id, start, end, duration, decimals = 0, useComma = false) 
 }
 
 // Animaciones con decimales y coma:
-animateValue("counter1", 0, 86.49, 1500, 2, true); // 86,49%
+animateValue("counter1", 0, 80.70, 1500, 2, true); // 80,70%
 animateValue("counter2", 0, 4.31, 1500, 2, true); // 4,76+
-animateValue("counter3", 0, 26.92, 1500, 2, true); // 26,92%
-animateValue("counter4", 0, 88.42, 1500, 2, true); // 88,42%
+animateValue("counter3", 0, 27.70, 1500, 2, true); // 27,70%
+animateValue("counter4", 0, 78.30, 1500, 2, true); // 78,30%
 
 
 
@@ -222,8 +222,8 @@ const data = {
       <tbody>
         <tr><td>27,70%</td><td>100,00%</td><td>2,00%</td></tr>
         <tr><td>23,20%</td><td>27,60%</td><td>1,00%</td></tr>
-        <tr><td>17,60%</td><td>23,10%</td><td>0,00%</td></tr>
-        <tr><td>-100,00%</td><td>17,50%</td><td>-1,00%</td></tr>
+        <tr><td>18,60%</td><td>23,10%</td><td>0,00%</td></tr>
+        <tr><td>-100,00%</td><td>18,50%</td><td>-1,00%</td></tr>
       </tbody>
     </table>
   `,
@@ -244,12 +244,12 @@ const data = {
     <table>
       <thead><tr><th>Desde</th><th>Hasta</th><th>Resultado</th></tr></thead>
       <tbody>
-        <tr><td>80,00%</td><td>100,00%</td><td>3,00%</td></tr>
-        <tr><td>78,50%</td><td>79,90%</td><td>2,00%</td></tr>
-        <tr><td>77,00%</td><td>78,40%</td><td>1,00%</td></tr>
-        <tr><td>75,50%</td><td>76,90%</td><td>0,00%</td></tr>
-        <tr><td>74,00%</td><td>75,40%</td><td>-1,00%</td></tr>
-        <tr><td>0,00%</td><td>73,90%</td><td>-2,00%</td></tr>
+        <tr><td>80,70%</td><td>100,00%</td><td>3,00%</td></tr>
+        <tr><td>79,60%</td><td>80,60%</td><td>2,00%</td></tr>
+        <tr><td>78,60%</td><td>79,50%</td><td>1,00%</td></tr>
+        <tr><td>77,50%</td><td>78,50%</td><td>0,00%</td></tr>
+        <tr><td>76,40%</td><td>77,40%</td><td>-1,00%</td></tr>
+        <tr><td>0,00%</td><td>76,30%</td><td>-2,00%</td></tr>
       </tbody>
     </table>
   `,
@@ -257,12 +257,12 @@ const data = {
     <table>
       <thead><tr><th>Desde</th><th>Hasta</th><th>Resultado</th></tr></thead>
       <tbody>
-        <tr><td>80,10%</td><td>100,00%</td><td>3,00%</td></tr>
-        <tr><td>78,90%</td><td>80,00%</td><td>2,00%</td></tr>
-        <tr><td>77,80%</td><td>78,80%</td><td>1,00%</td></tr>
-        <tr><td>76,60%</td><td>77,70%</td><td>0,00%</td></tr>
-        <tr><td>75,40%</td><td>76,50%</td><td>-1,00%</td></tr>
-        <tr><td>0,00%</td><td>76,00%</td><td>-2,00%</td></tr>
+        <tr><td>78,30%</td><td>100,00%</td><td>3,00%</td></tr>
+        <tr><td>77,60%</td><td>78,20%</td><td>2,00%</td></tr>
+        <tr><td>77,00%</td><td>77,50%</td><td>1,00%</td></tr>
+        <tr><td>76,30%</td><td>76,90%</td><td>0,00%</td></tr>
+        <tr><td>75,60%</td><td>76,20%</td><td>-1,00%</td></tr>
+        <tr><td>0,00%</td><td>75,50%</td><td>-2,00%</td></tr>
       </tbody>
     </table>
   `

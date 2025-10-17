@@ -18,7 +18,6 @@ canvas#canvas {
   pointer-events: none; /* Evita que bloquee clics del contenido */
 }
 
-
 .page-title.light-background {
   padding-top: 8rem;
   padding-bottom: 3rem;
@@ -43,7 +42,6 @@ canvas#canvas {
   overflow: visible; /* para probar */
 }
 
-
 .inner {
   --w: 100px;
   --h: 150px;
@@ -60,13 +58,14 @@ canvas#canvas {
   transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0deg);
   will-change: transform;
   cursor: grab;
+  transition: transform 0.5s ease; /* Transición suave para rotaciones */
 }
 
 /* Animación automática si tiene esta clase */
 .inner.auto-rotate {
   animation: rotating 20s linear infinite reverse;
 }
-/* NUEVO CODIGO */
+
 .inner:active {
   cursor: grabbing;
 }
@@ -76,7 +75,6 @@ canvas#canvas {
   pointer-events: none !important;
   cursor: default !important;
 }
-/* FIN NUEVO CODIGO */
 
 @keyframes rotating {
   from {
@@ -97,6 +95,7 @@ canvas#canvas {
   inset: 0;
   transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
     translateZ(var(--translateZ));
+  transition: all 0.3s ease; /* Transición suave para efectos */
 }
 
 .img {
@@ -126,11 +125,10 @@ canvas#canvas {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* <-- CLAVE */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-
 
 .profile-photo {
   width: 80px;
@@ -155,10 +153,10 @@ canvas#canvas {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* <--- cambiamos esto */
+  justify-content: flex-start;
   align-items: center;
   margin-top: 0.4em;
-  gap: 0.3em; /* opcional */
+  gap: 0.3em;
 }
 
 .name {
@@ -174,11 +172,95 @@ canvas#canvas {
   margin: 0.1em 0 0.6em;
 }
 
+/* =============================== */
+/* 🎯 EFECTOS PARA CUMPLEAÑERO CENTRADO */
+/* =============================== */
 
+/* Efecto base para cumpleañero */
 .card.cumpleanero {
   border: 3px solid gold;
   box-shadow: 0 0 15px 5px gold;
   transform-style: preserve-3d;
+}
+
+/* Efecto especial cuando está centrado */
+.card.cumpleanero.centrado {
+  animation: centradoPulse 1s ease-in-out;
+  border: 4px solid #ffd700;
+  box-shadow: 
+    0 0 20px #ffd700,
+    0 0 30px rgba(255, 215, 0, 0.7),
+    0 0 40px rgba(255, 215, 0, 0.5),
+    inset 0 0 15px rgba(255, 215, 0, 0.3);
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) 
+             translateZ(calc(var(--translateZ) * 1.1)) 
+             scale(1.05);
+  z-index: 10;
+}
+
+/* Animación de pulso para el efecto de centrado */
+@keyframes centradoPulse {
+  0% {
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) 
+               translateZ(var(--translateZ)) 
+               scale(1);
+    box-shadow: 0 0 15px 5px gold;
+  }
+  50% {
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) 
+               translateZ(calc(var(--translateZ) * 1.15)) 
+               scale(1.08);
+    box-shadow: 
+      0 0 25px #ffd700,
+      0 0 40px rgba(255, 215, 0, 0.8),
+      0 0 60px rgba(255, 215, 0, 0.6);
+  }
+  100% {
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) 
+               translateZ(calc(var(--translateZ) * 1.1)) 
+               scale(1.05);
+    box-shadow: 
+      0 0 20px #ffd700,
+      0 0 30px rgba(255, 215, 0, 0.7),
+      0 0 40px rgba(255, 215, 0, 0.5);
+  }
+}
+
+/* Efecto de brillo en la foto del perfil cuando está centrado */
+.card.cumpleanero.centrado .profile-photo {
+  animation: fotoBrillo 2s ease-in-out;
+}
+
+@keyframes fotoBrillo {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px gold, 0 0 30px rgba(255, 215, 0, 0.8);
+  }
+}
+
+/* Destacar el texto del cumpleañero centrado */
+.card.cumpleanero.centrado .name {
+  color: #fff;
+  text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.7);
+  font-weight: 700;
+}
+
+.card.cumpleanero.centrado .birthday {
+  color: #ffeb3b;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+  font-size: 0.9em;
+  animation: birthdayFlash 2s infinite;
+}
+
+@keyframes birthdayFlash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .inner.cumpleanero-activo {
@@ -189,6 +271,12 @@ canvas#canvas {
   width: 100px;
   height: 50px;
   border-radius: 9999px;
+  position: fixed;
+  bottom: 20px;           /* Distancia desde la parte inferior */
+  left: 50%;              /* Centrado horizontal */
+  transform: translateX(-50%); /* Compensa el 50% para centrar perfectamente */
+  z-index: 100;
+  background: #272727;    /* Mantener el fondo por si acaso */
 }
 
 .toggle-cont .toggle-input {
@@ -241,7 +329,6 @@ canvas#canvas {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-
 .carousel-controls {
   position: absolute;
   top: 50%;
@@ -250,7 +337,9 @@ canvas#canvas {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  pointer-events: none; /* permite clicks solo en botones */
+  pointer-events: none;
+  z-index: 50;
+  padding: 0 20px;
 }
 
 .carousel-controls button {
@@ -267,4 +356,73 @@ canvas#canvas {
 
 .carousel-controls button:hover {
   background: rgba(0,0,0,0.8);
+}
+
+/* =============================== */
+/* 🎯 BOTÓN PARA CENTRAR CUMPLEAÑERO */
+/* =============================== */
+#centrar-cumpleanero {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+#centrar-cumpleanero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #ffed4e, #ffd700);
+}
+
+#centrar-cumpleanero:active {
+  transform: translateY(0);
+}
+
+/* =============================== */
+/* 📱 RESPONSIVE */
+/* =============================== */
+@media (max-width: 768px) {
+  .wrapper {
+    height: 500px;
+  }
+  
+  .carousel-controls {
+    padding: 0 10px;
+  }
+  
+  .carousel-controls button {
+    font-size: 1.5rem;
+    padding: 0.3em 0.7em;
+  }
+  
+  #centrar-cumpleanero {
+    bottom: 80px;
+    right: 15px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+  
+  .toggle-cont {
+    bottom: 15px;
+    right: 15px;
+    transform: scale(0.9);
+  }
+  
+}
+
+/* Opcional: Ajustes para móviles */
+@media (max-width: 768px) {
+  .toggle-cont {
+    bottom: 15px;
+    transform: translateX(-50%) scale(0.9); /* Mantener centrado y escalar */
+  }
 }

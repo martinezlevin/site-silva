@@ -26,10 +26,12 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/cursor.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
+
+      <canvas id="fluid"></canvas>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
   <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -105,7 +107,7 @@
 <main class="main">
 
 <!-- Hero Section -->
-<section id="hero" class="hero section">
+<section id="hero" class="hero section" style="background: transparent;">
   <div class="container">
     <div class="hero-wrapper">
 
@@ -1105,7 +1107,7 @@
 </section><!-- /Services Section -->
 
 <!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section light-background">
+<section id="call-to-action" class="call-to-action section light-background" style="background: transparent;">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -1127,7 +1129,7 @@
 
 
 <!-- Speechs Section -->
-<section id="speechs" class="testimonials section">
+<section id="speechs" class="section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -1151,7 +1153,7 @@
           ¡Muy buenas tardes! Un gusto conocerte, mi nombre es X del área de soporte técnico.<br><br>
           Desde aquí voy a ayudarte con tu consulta, te cuento que actualmente estamos trabajando con atención Online, para que la consulta sea lo más dinámica y rápida posible.<br><br>
           ¿Con quién tengo el gusto?
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1180,7 +1182,7 @@
           Dentro de las próximas 24 hs recibirás en este chat un link a una encuesta para calificar tu experiencia con la atención.<br><br>
           Nuestra calificación funciona así: 0-6 😔, 7-8 😐, 9 😀, 10 😁<br><br>
           ¡Tu opinión es muy importante para nosotros! Te agradeceríamos mucho si pudieras participar. ¡Responder el link nos ayuda a mejorar día a día! ¡Muchas gracias desde ya!!! 😁
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1212,7 +1214,7 @@
           https://misconsumos.page.link/deriv_soptec_wa<br><br>
           ¡Si tenés dudas acerca de como registrarte te paso esta guía! 😉<br>
           https://www.personal.com.ar/ayuda/mas-servicios/mi-personal-flow/como-me-registro-en-mi-personal-flow
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1237,7 +1239,7 @@
       <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           ¡Estamos agradecidos que te hayas comunicado con nosotros, al finalizar esta gestión te llegará una breve encuesta para que nos indiques cómo fue tu experiencia, tu respuesta nos ayuda a mejorar día a día este canal de atención!. ¡Que tengas una excelente noche! 🤜🤛
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1262,7 +1264,7 @@
       <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           ¿Estás en línea? Estoy por acá a la espera para resolver juntos tu consulta
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1290,7 +1292,7 @@
           Nombre completo y DNI de la persona titular del servicio.<br>
           Domicilio dónde se encuentra instalado el servicio.<br>
           Detalle de la consulta o inconveniente que estés presentando.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1318,7 +1320,7 @@
           Entiendo, ¿podrías enviarme una foto de las luces del modem?<br><br>
           Podrías desconectar el modem de la corriente durante 1 minuto y volver a conectarlo, así hago un chequeo de señal en tiempo real, voy a necesitar que me avises cuando lo desconectes y cuando lo vuelvas a conectar.<br><br>
           ¿Podrías comentarme qué inconveniente estás teniendo con el servicio de internet?
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1343,7 +1345,7 @@
       <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           Entiendo, después de realizar chequeos noto que el inconveniente está en el cable exterior que envía señal de internet al modem, voy a agendarte una cita con un técnico especialista para que lo solucione! ¿Te queda mejor por la mañana o por la tarde?
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1369,7 +1371,7 @@
         <div class="accordion-body">
           Te comento para que no te vuelva a fallar, te recomiendo que una vez por semana los dejes desenchufados durante 2 minutos y los vuelvas a conectar, esto ayuda a liberar la memoria del dispositivo e instala las actualizaciones nuevas.<br><br>
           Recordá tener el módem a más de un metro del piso para garantizar su correcto funcionamiento. El mismo debe encontrarse en un espacio abierto, y no tiene que estar cerca de objetos que emitan ondas (teléfonos inalámbricos, microondas, parlantes, etc.) u objetos metálicos, peceras o fuentes de agua para evitar interferencias.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1396,7 +1398,7 @@
           No puedo ver tu último mensaje. 😢 Si es un audio 🎙, ¿me lo puedes escribir? Y si es una imagen 📷, ¿puedes enviarla en un formato más ligero?<br><br>
           No puedo ver archivos: .docx, audios, videos, comentarios en las fotos, GIF y stickers, pero sí puedo ver emojis, PDF imágenes.<br><br>
           ¡Espero tu respuesta!
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1428,7 +1430,7 @@
 Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando medidas para que esto no vuelva a repetirse. <br><br> 
 
 🤝 Estamos para ayudarte siempre. Si hay algo más en lo que pueda darte una mano, no dudes en decírmelo. 
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1461,7 +1463,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           Tu usuario y contraseña son los mismos que usas para entrar a Flow o a Mi Personal.<br>
           Podés entrar acá si necesitas registrarte https://regbf.telecom.com.ar/<br><br>
           ✅ Podés conectar hasta 3 dispositivos de manera simultánea.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1492,7 +1494,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           Validá los datos del titular: completá el campo “Altura” y los 4 últimos dígitos del número de línea.<br><br>
           ¡Listo! Ya generaste tu usuario y contraseña, entra a la app o la página de Flow App y disfrutá de todo el contenido.<br><br>
           Bien, vamos a hacer la siguiente prueba.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1519,7 +1521,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           Con el TV y el deco prendidos, presiona simultáneamente el botón 1 y 6 hasta que el LED se encienda y quede fija. A continuación, soltar ambos botones.<br><br>
           Después, presioná los botones 9 8 1, uno por uno. El LED parpadeará.<br><br>
           A continuación probá el control remoto.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1550,7 +1552,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           Ingresá a la app Mi Personal.<br>
           Seleccioná Hogar > Ver Servicios.<br>
           Activá el beneficio y continuá navegando mientras se resuelve la falla.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1578,7 +1580,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           ->La red 2.4 GHz cuenta con una velocidad limitada, pero es de largo alcance. La red llega hasta 50 MB y su distancia máxima es de 15 metros promedio, esta es muy fácil de congestionar y puede impactar en cortes y lentitud en tu servicio (generalmente con dispositivos de alto tráfico de datos: CEL,TV,PCs)<br><br>
           ->La red 5.8 GHz alcanza la mayor velocidad, la contratada, pero esta red tiene un alcance de hasta de 10 metros promedio de rango.<br><br>
           Para que tu dispositivo pueda visualizar esta red, deberá de contar con una placa de red que soporte esta tecnología
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1604,7 +1606,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
         <div class="accordion-body">
           ¡Mientras, para que no pierdas conectividad, me gustaría informarte que a tu línea Personal, de manera automática, te llegará un SMS informando que se activó el pack de 50 GB de uso libre por 72 hs, que le permitirá seguir navegando! Para que utilices tu celular como módem compartiendo internet o para uso personal. Si tenés dudas de como compartir internet a otros dispositivos te dejo este link donde vas a encontrar el paso a paso de como hacerlo 😊<br><br>
           👉https://www.personal.com.ar/ayuda/telefonia/manual/como-usar-celular-de-modem 
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1632,7 +1634,7 @@ Nuestro compromiso es brindarte un servicio de calidad, y ya estamos tomando med
           1. Ingresa a: bgp.he.net desde el dispositivo y conectado a su red.<br>
           2. Verifica de qué país le está asignando la IP.<br>
           Si la IP que figura es de Chile u otro país, deberás reiniciar equipo para intentar asignar nueva IP. En caso de que persista, deberás verlo con el proveedor Starlink, ya que la IP asignada no corresponde.
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1676,7 +1678,7 @@ Súper fácil y sin vueltas: <br>
 🎁 Y lo mejor: <br><br>
 
 Mantenés tu promo actual, pero ahora vas a disfrutar de internet mucho más rápido, moderno y confiable ⚡. 
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1712,7 +1714,7 @@ Mantenés tu promo actual, pero ahora vas a disfrutar de internet mucho más rá
           📲 *112 desde línea Personal<br>
           (por consultas administrativas)<br><br>
           Te esperamos por cualquiera de estos canales para poder ayudarte!😁❤
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1737,7 +1739,7 @@ Mantenés tu promo actual, pero ahora vas a disfrutar de internet mucho más rá
       <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           Te comento que tenés la configuración del Modem con BandSteering lo cual hace que se designe de manera automática una de las dos señales de wifi 2.4 y 5.8. Esto suele generar que se desconecte temporalmente mientras cambia de red cuando se tiene varios dispositivos conectados al wifi, por lo mismo si te parece podemos separar nuevamente las redes wifi, así veríficas el funcionamiento 😊
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1762,7 +1764,7 @@ Mantenés tu promo actual, pero ahora vas a disfrutar de internet mucho más rá
       <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           Entiendo que prefieras no hacer los chequeos, pero para avanzar es necesario realizar el análisis correspondiente. ✨ Si cambias de opinión, podemos continuarlos y resolver tu consulta. De lo contrario, quedamos atentos a tu próximo contacto, que tengas una linda noche! ☺️
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1787,7 +1789,7 @@ Mantenés tu promo actual, pero ahora vas a disfrutar de internet mucho más rá
       <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionDark">
         <div class="accordion-body">
           Te informo que en este momento presentamos un inconveniente sobre nuestro sistema, por tal motivo no estamos pudiendo avanzar con la gestión, te pido si podes comunicarte dentro de las siguientes 24 hs para que podamos ayudarte 🙌 Lamento mucho los inconvenientes ocasionados
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1815,7 +1817,7 @@ Mientras tanto, queremos ofrecerte una alternativa para que sigas disfrutando de
 Podés acceder a la Flow App, que está disponible para celulares 📱, tablets 💻 y también en Smart TVs 🖥️, sin costo extra. Ahí vas a encontrar más de 150 canales en vivo, series, pelis y mucho más 🎬🍿<br> <br>
 Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Queremos que sigas disfrutando de Flow al máximo, incluso cuando surgen estos imprevistos 💚
 
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -1845,7 +1847,7 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
         📌 Red WiFi: Conectá la cámara a una red WiFi de 2.4 GHz.<br><br>
         📌 Escaneo de QR: Con la cámara WiFi, escaneá el código QR que aparece en tu celular. Si el escaneo fue exitoso, escucharás: "Código QR registrado, conectando". Al finalizar, escucharás: "Configuración finalizada".<br><br>
         ▶ Video de ayuda: Te comparto este video por si necesitás una guía más visual: https://youtu.be/YSSzPgWYItE?si=XHL5DpDTF49Lg2q-<br>
-<div class="copy-container" style="position:absolute; top:10px; right:8px;">
+<div class="copy-container">
   <label class="container1">
     <input type="checkbox" />
     <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="clipboard">
@@ -3604,12 +3606,12 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
 
 
 <!-- Contact Section -->
-<section id="contact" class="contact section" style="position: relative;">
+<section id="contact" class="contact section" style="position: relative; background: transparent;" >
   <!-- Imagen izquierda -->
-  <img src="assets/img/services/izquierda.png" alt="Imagen Izquierda" class="side-image left-image" />
+  <img src="assets/img/services/izquierda.png" alt="Imagen Izquierda" class="side-image left-image"  style="z-index: 1;"/>
 
   <!-- Imagen derecha -->
-  <img src="assets/img/services/derecha.png" alt="Imagen Derecha" class="side-image right-image" />
+  <img src="assets/img/services/derecha.png" alt="Imagen Derecha" class="side-image right-image"  style="z-index: 1;"/>
 
   <!-- Section Title -->
   <div class="container section-title">
@@ -3797,7 +3799,11 @@ Si querés, te puedo ayudar paso a paso para descargarla y dejarla lista 🙌 Qu
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- CURSOR SMOKEY EFFECT -->
 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="assets/js/cursor.js"></script>
 
 </body>
 

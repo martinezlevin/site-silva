@@ -4601,3 +4601,9 @@ th {
   gap: 0px; /* Reduce espacio entre texto e imagen */
   margin-top: 20px; /* Opcional, si querés bajarlo un poco */
 }
+
+.copy-container {
+  position:absolute; 
+  top: 20px; 
+  right: 20px;
+}

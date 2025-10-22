@@ -144,7 +144,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 70px;
   margin-right: 8px;
 }
 
@@ -154,6 +154,16 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
+
+.logo img {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0px transparent);
+}
+
+.logo img:hover {
+  filter: drop-shadow(0 0 8px #0698CE) drop-shadow(0 0 16px #0698CE);
+}
+
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -459,7 +469,7 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 

@@ -33,13 +33,109 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" >
-          <img src="assets/img/favicon.png" alt="logo-site-silva" style="width: 40px !important;">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/favicon.png" alt="logo-site-silva">
       </a>
     </div>
   </header>
 
 
+  <section class="container mt-5">
+<div class="card glass-card mx-auto" style="max-width: 500px;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Control de tiempos de caso</h5>
+      <p class="card-text">⏱ El temporizador se reinicia cada 2 minutos.</p>
+
+      <div id="timer" class="display-4 text-primary mb-3">02:00</div>
+
+      <div class="mb-3">
+        <button class="btn btn-success me-2" onclick="startTimer()">Iniciar</button>
+        <button class="btn btn-secondary" onclick="stopTimer()">Detener</button>
+      </div>
+
+      <div class="mb-3">
+        <button class="btn btn-success me-2" onclick="increment('finalizados')">Finalizado</button>
+        <button class="btn btn-primary me-2" onclick="increment('cerrados')">Cerrado</button>
+        <button class="btn btn-danger" onclick="increment('transferidos')">Transferido</button>
+      </div>
+
+      <div class="d-flex justify-content-center gap-4">
+        <div>✅ Finalizados: <span id="finalizados">0</span></div>
+        <div>📁 Cerrados: <span id="cerrados">0</span></div>
+        <div>📤 Transferidos: <span id="transferidos">0</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audios para el temporizador -->
+<audio id="startSound" src="ruta/al/audio-inicio.mp3" preload="auto"></audio>
+<audio id="endSound" src="ruta/al/audio-fin.mp3" preload="auto"></audio>
+
+
+<style>
+  #timer {
+  font-size: 48px;
+  font-weight: bold;
+}
+</style>
+
+<script>
+  let timer;
+  let timeLeft = 120;
+
+  function updateDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.getElementById("timer").textContent =
+      `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  }
+
+  function startTimer() {
+    clearInterval(timer);
+    updateDisplay();
+    timer = setInterval(() => {
+      timeLeft--;
+      updateDisplay();
+      if (timeLeft <= 0) {
+        timeLeft = 120;
+      }
+    }, 1000);
+  }
+
+  function stopTimer() {
+    clearInterval(timer);
+  }
+
+  function increment(type) {
+    const el = document.getElementById(type);
+    el.textContent = parseInt(el.textContent) + 1;
+  }
+
+  const startSound = document.getElementById("startSound");
+const endSound = document.getElementById("endSound");
+
+function startTimer() {
+  clearInterval(timer);
+  updateDisplay();
+  startSound.play(); // 🔊 Sonido al iniciar
+  timer = setInterval(() => {
+    timeLeft--;
+    updateDisplay();
+    if (timeLeft <= 0) {
+      endSound.play(); // 🔔 Sonido al terminar
+      timeLeft = 120;
+    }
+  }, 1000);
+}
+
+</script>
+
+<div class="container text-center">
+  <a href="https://c4-bomb.vercel.app/" class="btn btn-warning btn-lg" role="button" target="_blank" rel="noopener noreferrer">
+    Versión God 😎
+  </a>
+</div>
 
 
     <!-- Main JS File -->
